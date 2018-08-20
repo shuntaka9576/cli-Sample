@@ -1,8 +1,8 @@
 package main
 
 import (
-	"os"
 	"github.com/urfave/cli"
+	"os"
 )
 
 var Vesion string = "0.1.0"
@@ -14,11 +14,11 @@ func main() {
 
 func newApp() *cli.App {
 	app := cli.NewApp()
-	app.Name = "ghq"
+	app.Name = "cli-Sample"
 	app.Usage = "explain cli tool"
 	app.Version = Vesion
 	app.Author = "shuntaka9576"
 	app.Email = ""
-	//app.Commands = Commands
+	app.Commands = Commands
 	return app
 }
